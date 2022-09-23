@@ -41,19 +41,19 @@
 
 
 
-### Outros operadores
+#### Outros operadores
 
-#### $gt (greater than)
+##### $gt (greater than)
 
 - **Busca valores maiores do que um valor que foi determinado;**
   - **Exemplo: `db.nome_da_coleção.find({chave: {$gt: valor}}).pretty()`;**
 
-#### $lt (less than)
+##### $lt (less than)
 
 - **Busca por valores menos do que o valor que foi especificado;**
   - **Exemplo: `db.nome_da_coleção.find({chave: {$lt: valor}}).pretty()`;**
 
-#### $or
+##### $or
 
 - **Utilizado para resgatar dados que possuem um valor ou outro;**
 
@@ -65,7 +65,7 @@
 
   - **Podemos combinar vários operadores;**
 
-####  OBS
+#####  OBS:
 
 - **Quando realizamos a filtragem no método `find`, e utilizamos a mesma chave, porém, com operadores diferentes, será levado em conta o último resgistro (o último operador utilizado);**
   - **Exemplo: `db.nome_da_coleção.find({ chave1: {$gt: valor}, chave1: {$lt: valor}}).pretty()`;**
@@ -73,7 +73,7 @@
 
 
 
-### AND e OR na mesma consulta
+#### AND e OR na mesma consulta
 
 - **Podemos ter vários operadores em uma consulta;**
 
@@ -87,7 +87,7 @@
 
 
 
-### Contando o número de resultados
+#### Contando o número de resultados
 
 - **Podemos contar o números de retornos de uma consulta, a partir do método `count`;**
   - **Exemplo: `db.nome_da_coleção.find({ chave: valor }).count()`;**
