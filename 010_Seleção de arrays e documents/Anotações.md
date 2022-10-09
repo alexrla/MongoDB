@@ -11,7 +11,7 @@
 - **Para resgatar um dado que está em documento (`document`), que por sua vez, está em um outro documento, precisaremos colocar duas chaves entre aspas e depois aplicamos o valor que estamos buscando (semelhante a uma filtragedem de um dado comum):**
 
   ```javascript
-  db.nome_da_coleção.find({ "chave_1.chave2_": valor })
+  db.nome_da_coleção.find({ "chave_1.chave_2": valor })
   ```
 
   
@@ -21,7 +21,7 @@
 - **A lógica acaba sendo a mesma (teremos mais de uma chave e ela acaba ficando entre aspas):**
   
   ```javascript
-  db.nome_da_coleção.find({ "chave_1.chave2_": { $operador: valor} })
+  db.nome_da_coleção.find({ "chave_1.chave_2": { $operador: valor} })
   ```
   
   
